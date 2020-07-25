@@ -1,13 +1,13 @@
 $('document').ready(function () {
     // INPUTS
-    const searchTermInput = $('');
-    const numRecordsRetrieve = $('');
-    const startYear = $('');
-    const endYear = $('');
+    const searchTermInput = $('search-term-input');
+    const numRecordsRetrieve = $('number-records-retrieve');
+    const startYear = $('start-year-input');
+    const endYear = $('end-year-input');
     const searchBTN = $('');
     const clearResultsBtn = $('');
     //   DISPLAY
-    const topArticlesDisplay = $('');
+    const topArticlesDisplay = $('top-articles-display');
 
 
     // searchBTN.on('click', function () {

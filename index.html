@@ -30,17 +30,17 @@
                 <form>
                     <div class="form-group">
                         <label for="search-term">Search Term:</label>
-                        <input class="search-term" />
-                        <select class="custom-select" id="inputGroupSelect02">
+                        <input class="search-term" id="search-term-input" />
+                        <select class="custom-select" id="number-records-retrieve">
                             <option selected>Choose...</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                         </select>
                         <label for="start-year">Start Year (Optional):</label>
-                        <input class="start-year">
+                        <input class="start-year" id="start-year-input">
                         <label for="end-year">End Year (Optional):</label>
-                        <input class="end-year">
+                        <input class="end-year" id="end-year-input">
                     </div>
                 </form>
             </div>
@@ -54,11 +54,11 @@
             <div class="card col-md-6">
                 <div class="card-header"><strong>Top Articles</strong></div>
                 <div class="card-body">
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush" id="top-articles-display">
                         <li class="list-group-item">Cras justo odio</li>
                         <li class="list-group-item">Dapibus ac facilisis in</li>
                         <li class="list-group-item">Vestibulum at eros</li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-3"></div>
