@@ -14,17 +14,65 @@
 <body>
     <header class="Jumbotron">
         <div class="row">
-            <div class="col-md-10">
-                <h1 class="text-center">New York Times Search</h1>
+            <div class="col-1"></div>
+            <div class="col-md-10 head-box">
+                <h1 class="text-center"><strong>New York Times Search</strong></h1>
             </div>
+            <div class="col-1"></div>
         </div>
     </header>
 
-    
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="card col-md-6">
+                <div class="card-header"><strong>Search Parameters</strong></div>
+                <form>
+                    <div class="form-group">
+                        <label for="search-term">Search Term:</label>
+                        <input class="search-term" />
+                        <select class="custom-select" id="inputGroupSelect02">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <label for="start-year">Start Year (Optional):</label>
+                        <input class="start-year">
+                        <label for="end-year">End Year (Optional):</label>
+                        <input class="end-year">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </main>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="card col-md-6">
+                <div class="card-header"><strong>Top Articles</strong></div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
 
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!-- <script src="script.js"></script> -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./src/script.js"></script>
 
 </body>
+
 </html>
