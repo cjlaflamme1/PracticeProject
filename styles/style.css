@@ -1,6 +1,10 @@
+.Jumbotron {
+    height: 200px;
+}
+
 .head-box {
     width: 100%;
-    height: auto;
+    height: 150px;
     background-color: #000658c5;
     color: #ffffff;
 }
