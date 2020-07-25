@@ -1,25 +1,36 @@
 $('document').ready(function () {
-  const searchTermInput = $('');
-  const numRecordsRetrieve = $('');
+    // INPUTS
+    const searchTermInput = $('');
+    const numRecordsRetrieve = $('');
+    const startYear = $('');
+    const endYear = $('');
+    const searchBTN = $('');
+    const clearResultsBtn = $('');
+    //   DISPLAY
+    const topArticlesDisplay = $('');
 
-  let searchTerm = 'election'
 
-  var queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=VGZwZNo5TbgkYdXmf6BZEsLOkiJ0Psae`;
+    // searchBTN.on('click', function () {
+        let searchTerm = 'election'
 
-  $.ajax({
-    url: queryURL,
-    method: "GET"
-  }).then(function (response) {
+        var queryURL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchTerm}&api-key=VGZwZNo5TbgkYdXmf6BZEsLOkiJ0Psae`;
 
-    console.log(response);
-    //   response.docs[i]
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
 
-    var articleArray = $(response.response.docs);
+            console.log(response);
 
-    $.each(articleArray,function(article){
-      console.log(articleArray[article]);
-    });
+            var articleArray = $(response.response.docs);
 
-  });
+            $.each(articleArray, function (article) {
+                console.log(articleArray[article]);
+            });
+
+        });
+
+    // });
+
 
 });
